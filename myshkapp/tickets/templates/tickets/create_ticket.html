@@ -1,0 +1,15 @@
+{%extends "myshk/base.html"%}
+{%block content%}
+    <div class="content-section">
+        <form method="POST">
+            {% csrf_token %}
+            <fieldset class="form-group">
+                <legend class="broder-bottom mb-4">Log In</legend>
+                {{CreateTicketForm.form.as_p}}
+            </fieldset>
+            <div class="form-group">
+                <button class="btn btn-outline" type="submit">Create</button>
+            </div>
+        </form>
+    </div>
+{% endblock content %}

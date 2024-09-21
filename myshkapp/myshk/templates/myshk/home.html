@@ -1,0 +1,11 @@
+{%extends "myshk/base.html"%}
+{%block content%}
+<P><h1>NOW STREAMING</h1></P>
+    {% for movie in movies%}
+        
+        <h4>{{movie.name}}</h4>
+        <p>summary: {{movie.story}}</p>
+        <p>Date: {{movie.date}}</p>
+
+{%endfor%}
+{%endblock content%}
